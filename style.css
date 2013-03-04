@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, p, blockquote, pre,h1,h2,h3
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/****************************************/
+/*          Main Styles                 */
+/****************************************/
+
+body {
+	background: #E6D6B1;
+	font-size: 12px;
+}
+
+#main-content {
+	width: 80%;
+	margin: auto;
+}
+
+#main-content ul li {
+	width:128px;
+	height:128px;
+	float:left;
+	margin-right: 10px;
+}
+
+#main-content  ul li div.twitter {
+	background: url('img/Twitter-icon.png') no-repeat center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0  15px rgba(256,256,256,0.6);
+	-webkit-transition: all 0.2s ease-in-out;
+	background-size: 100%;
+}
+
+#main-content  ul li div.twitter:hover {
+	box-shadow: inset 0 0 0 0 rgba(256,256,256,0.6);
+	background-size: 120%;
+	-webkit-transform: rotate(20deg);
+}
+
+#main-content  ul li div.twitter:active {
+	-webkit-transform: scale(1.1);
+}
+
+
+#main-content  ul li div.pinterest {
+	background: url('img/Pinterest-icon.png') no-repeat center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0  15px rgba(256,256,256,0.6);
+	-webkit-transition: all 0.2s ease-in-out;
+	background-size: 100%;
+	text-align: center;
+	position: relative;
+}
+
+#main-content  ul li div.pinterest div.inner {
+	background: url('img/Pinterest-icon.png') no-repeat center;
+	width: 76%;
+	height: 76%;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+
+#main-content  ul li div.pinterest div.inner:hover {
+	-webkit-transform: rotate(360deg);
+}
+
+
+#main-content  ul li div.vimeo {
+	background: url('img/Vimeo-icon.png') no-repeat center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-transition: all 0.2s ease-in-out;
+	background-size: 100%;
+	text-align: center;
+	position: relative;
+}
+
+#main-content  ul li div.vimeo:hover div.info {
+	-webkit-transform: scale(1);
+	opacity: 1;
+}	
+
+#main-content  ul li div.vimeo:hover div.inner > div {
+	-webkit-transform: scale(0);
+}	
+
+#main-content  ul li div.vimeo div.info {
+	/*background: url('img/Vimeo-icon.png') no-repeat center;*/
+	background: #1964A6;
+	width: 76%;
+	height: 76%;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	border-radius: 50%;
+	position: relative;
+	-webkit-transition: all 0.4s ease-in-out 0.2s;
+	-webkit-transform: scale(2);
+	opacity: 0;
+}
+
+#main-content  ul li div.vimeo div.info > h2 {
+	position: absolute;
+	top: 15px;
+	left: 19.9%;
+	color: #DDD;
+}
+
+#main-content  ul li div.vimeo div.inner {
+	/*background: url('img/Vimeo-icon.png') no-repeat center;*/
+	background: #E6D6B1;
+	width: 76%;
+	height: 76%;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+#main-content  ul li div.vimeo div.inner > div {
+	background: url('img/Vimeo-icon.png') no-repeat center;
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.4s ease-in-out;
+}
+
+
+/* Facebook */
+#main-content  ul li div.facebook {
+	background: url('img/Facebook-icon.png') no-repeat center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-transition: all 0.2s ease-in-out;
+	background-size: 100%;
+	text-align: center;
+	position: relative;
+	box-shadow: inset 0 0 0  15px rgba(256,256,256,0.6);
+}
+
+#main-content  ul li div.facebook div.inner {
+	background: #6BB7FA;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-transition: all 0.2s ease-in-out;
+	background-size: 100%;
+	-webkit-transform: scale(0);
+	opacity: 0.7;
+}
+
+#main-content  ul li div.facebook:hover {
+	box-shadow: inset 0 0 0  0 rgba(256,256,256,0.6);
+}
+
+#main-content  ul li div.facebook:hover div.inner {
+	-webkit-transform: scale(1);
+}
+
+/* Youtube */
+#main-content  ul li > div {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#main-content  ul li div div.info {
+	background: #6BB7FA;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-transition: all 0.2s ease-in-out;
+	background-size: 100%;
+	position: relative;
+	text-align: center;
+}
+
+#main-content  ul li div div.info * {
+}
+
+#main-content  ul li div div.info span {
+	padding-top: 20px;
+}
+
+#main-content  ul li div div.info a {
+	border-radius: 50%;
+	background: white;
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 10px auto;
+}
+
+#main-content  ul li div div.youtube {
+	background: url('img/Youtube-icon.png') no-repeat center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-transition: all 0.2s ease-in-out;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+}
